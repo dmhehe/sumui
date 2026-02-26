@@ -59,12 +59,11 @@ def mainloop():
     
     
 def destroy():
-    import simtimer
     def func1():
         if simui.simmain.has_show_win() or g_dlg_num > 0:
-            simtimer.add_timer("simui.destroy",  100, func1)
+            add_timer("simui.destroy",  100, func1)
             return
         root = simui.simmain.get_root_TK()
         root.destroy()
         
-    simtimer.add_timer("simui.destroy",  100, func1)
+    add_timer("simui.destroy",  100, func1)

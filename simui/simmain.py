@@ -27,7 +27,7 @@ def add_show_win(win_obj):
 
 
 def has_show_win():
-    if g_show_win_list:
+    if len(g_show_win_list) > 0:
         return True
     return False
 

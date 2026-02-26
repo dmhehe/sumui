@@ -539,8 +539,8 @@ class SimWin():
             checkbox.place(x=checkbox_x, y=checkbox_y, width=checkbox_w, height=checkbox_h)
             
             if value == True:
-                self.raw_set_attr(obj, attr_name, True)
                 var.set(1)
+                self.raw_set_attr(obj, attr_name, True)
             else:
                 self.raw_set_attr(obj, attr_name, False)
                 var.set(0)
