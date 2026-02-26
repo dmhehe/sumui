@@ -780,6 +780,10 @@ class SimWin():
                 
             entry = tk.Entry(root, bg="lightgreen")
         elif att_cls == "" or att_cls == None:
+            if value == None:
+                value = ""
+                self.raw_set_attr(obj, attr_name, value)
+                
             entry = tk.Entry(root, bg="lightgreen")
         
         else:
@@ -819,6 +823,7 @@ class SimWin():
             
             entry.insert(0, str(value))  # 插入新值
             entry.config(validate="key")
+            self.raw_set_attr(obj, attr_name, str(value))
 
     
         if args_dict.get("need_h", ""):
