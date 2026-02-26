@@ -13,7 +13,7 @@ from simui.simtimer import add_timer, del_timer
 
 from simui.simsubwin import show_sub_win, get_show_func_obj
 
-vesion = "0.1.3"
+vesion = "0.1.4"
 
 
 g_dlg_num = 0

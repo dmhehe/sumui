@@ -118,6 +118,7 @@ class SimWin():
 
 
     def on_int_validate(self, P):
+        P = P.replace("-", "")
         if P.isdigit() or P == "":
             return True
         else:
